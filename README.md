@@ -23,3 +23,5 @@ Jednotlive skripty delaji
 - vol.sh - nastaveni hlasitosti, jen wrapper kolem amixer, snadno umoznuje nahradit amixer jinym toolem. Pouzity v play.sh
 - play.sh - vlastni pusteni jinglu, tedy posle pros nc pause do vlc (pauza hudby), pusti jingle pres mplayer, pak odpauzuje vlc
 - set_cron.sh - nastavi crontab aktualnimu useru pro spouseni play.sh podle rozpisu. Musi se upravit dle rozpisu a delky trvani jinglu
+
+Pozor, nektere skripty (play.sh, set_cron.sh) obsahuji cesty na filesystem. Nyni predpokladaji, ze vol.sh a play.sh bude v home adresari. Play.sh take odkazuje na mp3 s jingly, ktere by mely existovat.
